@@ -285,8 +285,10 @@
 </div>
 
 <div class="shape"></div>
-<!-- Main Photo-->
+<!-- Main Photo//-->
 
+
+<!-- //MAin About -->
 <div id="main_about">
 <div class="top_about_block">
 <div class="left_about_block">
@@ -322,9 +324,54 @@
 </div>
 
 </div>
-<!-- //MAin About -->
-
+<div class="shape"></div>
 <!-- Main About //-->
+
+<!-- //Main Bottom -->
+<div id="main_bottom">
+	<div class="opros">
+	<span class="h1_main_block opros_h">Об академии</span>
+	<p class="qws">Вам нравится этот сайт?</p>
+<input type="radio" checked="checked" name="dva"/><label for="dva">Да, дизайн хороший, актуальная информация и в полном объеме</label><br> 
+<input type="radio" name="dva" id="dva1" /><label for="dva1">Средне, дизайн не самый 
+удачный, актуальная информация и в полном объеме</label><br>
+<input type="radio" name="dva" id="dva2"/><label for="dva2">Средне, дизайн хороший, 
+информации недостаточно</label><br>
+<input type="radio" name="dva" id="dva3"/><label for="dva3">Сайт не отвечает 
+моим требованиям</label>
+	</div>
+
+<div class="banners">
+	<div id="owl-demo" class="owl-carousel">
+    <div>
+        <img src="images/sb1.png"/>
+        <img src="images/sb2.png"/>
+    </div>
+    <div>
+        <img src="images/sb3.png"/>
+        <img src="images/sb4.png"/>
+    </div>
+    <div>
+        <img src="images/sb1.png"/>
+        <img src="images/sb2.png"/>
+    </div>
+</div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+    $("#owl-demo").owlCarousel({
+        navigation: true,
+        pagination: true,
+          nav:true,
+          items:2,
+    });
+});
+</script>
+
+</div>
+<!-- Main Bottom// -->
+
 	</main><!-- .content -->
 
 </div><!-- .wrapper -->
