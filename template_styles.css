@@ -1,0 +1,259 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+html {
+	height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 14px/18px Arial, sans-serif;
+	height: 100%;
+}
+.wrapper {
+	min-width: 1000px;
+	max-width: 1000px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+a
+{
+	text-decoration: underline;
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+p, span, a, div
+{
+	color: #323232;
+}
+
+/*ШРИФТЫ*/
+p, span, a, div, input
+{
+	font-family: 'Roboto Light', arial;
+}
+/*------*/
+
+
+/*кнопки*/
+.btn_blue
+{
+	padding: 5px 30px;
+    background-color: #314DA1;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+}
+/*------*/
+/* Header
+-----------------------------------------------------------------------------*/
+#top_header
+{
+
+}
+
+#bottom_header
+{
+	
+}
+
+
+.top_rectangle {
+    width: 100%;
+    height: 10px;
+    background-color: #314DA1;
+}
+
+.header {
+	height: 215px;
+	background: #FFE680;
+}
+
+#logo {
+  width: 180px;
+  float: left;
+  text-align: center;
+  margin: 45px 0 0 0;
+}
+
+#top_name {
+  width: 250px;
+  float: left;
+  margin: 45px 0 0 30px;
+  color: #666;
+  position: relative;
+}
+
+#top_name p
+{
+	font-size: 14px;
+	margin: 0 0 5px 0;
+}
+
+#top_name span
+{
+	font-size: 22px;
+	line-height: 1.2;
+}
+
+#top_phone
+{
+	  float: left;
+  margin: 70px 0 0 20px;
+    text-align: left;
+  width: 210px;
+}
+
+#top_phone .tp_phone
+{
+font-size: 23px;
+}
+
+#top_phone .zvonok
+{
+font-size: 14px;
+  margin: 0px 0px 0 30px;
+}
+
+#top_phone .tp_phone:before
+{
+	content: "";
+	width: 17px;
+	height: 30px;
+	background: url(images/icon1.png);
+	display: inline-block;
+	  vertical-align: middle;
+  margin-right: 10px;
+}
+
+#top_search
+{
+	float: right;
+  margin: 70px 0 0 0;
+  text-align: right;
+  width: 300px;
+}
+
+#top_search .search input[type="text"]
+{
+	    width: 150px;
+    background-color: #FFF;
+    border: 1px solid #D8D8D7;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    color: #969696;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    padding: 5px 10px;
+    margin-right: 10px;
+} 
+
+#top_search .top_map
+{
+float: left;
+margin-top: 10px;
+margin-left: 20px;
+}
+
+#top_search .top_map a:before
+{
+	content: "";
+	width: 17px;
+	height: 15px;
+	background: url(images/icon2.png);
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+#top_search .top_rss
+{
+	float: right;
+	margin-top: 10px;
+}
+
+#top_search .top_rss a:after
+{
+	content: "";
+	width: 17px;
+	height: 17px;
+	background: url(images/icon3.png);
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 5px;
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.content {
+	padding: 0 0 320px;
+}
+
+
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	margin: -320px auto 0;
+	min-width: 1000px;
+	max-width: 1000px;
+	height: 320px;
+	background: #BFF08E;
+	position: relative;
+}
