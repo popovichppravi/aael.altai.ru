@@ -59,7 +59,24 @@
 
 </div>	
 <div id="bottom_header">
-<div class="menu_btn">меню</div>
+	<div class="menu_btn"><a href="#">меню</a></div>
+
+
+<div id="menu_top">
+<div>
+<ul>
+	<li><a href="#"><img src="images/m1.png" height="25" width="29"><br>Главная</a></li>
+	<li><a href="#"><img src="images/m2.png" height="25" ><br>ААЭП</a></li>
+	<li><a href="#"><img src="images/m3.png" height="25" ><br>Абитуриенту</a></li>
+	<li><a href="#"><img src="images/m4.png" height="25" ><br>Студенту</a></li>
+	<li><a href="#"><img src="images/m5.png" height="25" ><br>Партнеру</a></li>
+	<li><a href="#"><img src="images/m6.png" height="25"><br>Выпускнику</a></li>
+	<li><a href="#"><img src="images/m7.png" height="25" ><br>Форум</a></li>
+	<li><a href="#"><img src="images/m8.png" height="25" ><br>СМИ</a></li>
+</ul>
+</div>
+</div>
+
 </div>
 
 
