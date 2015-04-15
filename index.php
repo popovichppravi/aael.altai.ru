@@ -22,6 +22,34 @@
 <body>
 
 <div class="top_rectangle"></div>	
+
+<!--//login-->
+<div class="cont_login">
+<div class="login_inner">
+<div id="login">
+		<a href="#" class="in_kab">Войти в личный кабинет</a>
+		<div class="login_form">
+					<span class="h2_lg">Авторизуйтесь</span>
+					<div class="w_line"></div>
+					<form class="login" action="" method="">
+		<input type="text" name="login" placeholder="E-mail">
+		<input type="text" name="pass" placeholder="Пароль">
+		<div class="rem_reg">
+		<a href="#">Регистрация</a><br>
+		<a href="#">Забыли пароль?</a>        
+		</div>
+		<input type="submit" value="Войти" class="btn_lblue">
+		
+	</form>
+				</div>
+</div>
+</div>
+</div>
+<!--login//-->
+
+<div></div>
+
+
 <div class="wrapper">
 
 
@@ -348,7 +376,7 @@
         <img src="images/sb2.png"/>
     </div>
     <div>
-        <img src="images/sb3.png"/>
+        <img src="images/sb3.png"/ style="padding: 5px; width: 200px; height: 100px;">
         <img src="images/sb4.png"/>
     </div>
     <div>
@@ -361,14 +389,24 @@
 <script type="text/javascript">
 	$(document).ready(function () {
     $("#owl-demo").owlCarousel({
-        navigation: true,
-        pagination: true,
+        loop:false,
           nav:true,
           items:2,
+           margin:0,
     });
 });
 </script>
 
+
+<div class="links">
+	<ul>
+		<li><a href="#"><img src="images/l0.png"></a></li>
+		<li><a href="#"><img src="images/l1.png"></a></li>
+		<li><a href="#"><img src="images/l2.png"></a></li>
+		<li><a href="#"><img src="images/l3.png"></a></li>
+		<li><a href="#"><img src="images/l4.png"></a></li>
+	</ul>
+</div>
 </div>
 <!-- Main Bottom// -->
 
@@ -376,8 +414,91 @@
 
 </div><!-- .wrapper -->
 
-<footer class="footer">
-	<strong>Footer:</strong> Mus elit Morbi mus enim lacus at quis Nam eget morbi. Et semper urna urna non at cursus dolor vestibulum neque enim. Tellus interdum at laoreet laoreet lacinia lacinia sed Quisque justo quis. Hendrerit scelerisque lorem elit orci tempor tincidunt enim Phasellus dignissim tincidunt. Nunc vel et Sed nisl Vestibulum odio montes Aliquam volutpat pellentesque. Ut pede sagittis et quis nunc gravida porttitor ligula.
+<footer id="footer">
+<div class="wrapper">
+	<div class="footer_block">
+	<div class="footer_top_block">
+		<div class="layout-column first_column">
+			<img class="logo_w" src="images/logo_w.png">
+			<p>
+				Официальный сайт «Алтайской Академии экономики и права»
+			</p>
+			<p>
+				656038, Россия,<br> Алтайский край, г. Барнаул, просп. Комсомольский, д. 86
+			</p>
+			<div class="tel_w">
+				<span>(385) 224-48-08</span><br>
+				<a href="#">Обратная связь</a>
+			</div>
+		</div>
+
+		<div class="layout-column">
+		<span class="h3_fmenu">Структура ААЭП</span>
+		<ul>
+			<li><a href="#">Ректорат</a></li>
+			<li><a href="#">Ученый совет</a></li>
+			<li><a href="#">Отдел УМР и менеджмента качества</a></li>
+			<li><a href="#">Общеакадемические кафедры</a></li>
+			<li><a href="#">Научно-Информационный Центр</a></li>
+			<li><a href="#">Издательство</a></li>
+			<li><a href="#">Отдел управления персоналом ААЭП</a></li>
+			<li><a href="#">Центр компьютерных технологий</a></li>
+			<li><a href="#">Юридическая клиника</a></li>
+			<li><a href="#">Учебно-спортивный центр</a></li>
+			<li><a href="#">Совет общественности</a></li>
+			<li><a href="#">База "Благодать"</a></li>
+			<li><a href="#">Отдел маркетинга (проф. ориентации и связей с общественностью)</a></li>
+		</ul>
+		</div>
+
+		<div class="layout-column">
+		<span class="h3_fmenu">Отдел науки и международных связей</span>
+		<ul>
+			<li><a href="#">Обучение</a></li>
+			<li><a href="#">Партнерство</a></li>
+			<li><a href="#">Конкурсы, гранты, конференции</a></li>
+			<li><a href="#">Публикационная активность</a></li>
+			<li><a href="#">Аспирантура</a></li>
+			<li><a href="#">Студенческая наука</a></li>
+			<li><a href="#">Международная деятельность</a></li>
+		</ul>
+		</div>
+
+		<div class="layout-column">
+		<span class="h3_fmenu">Трудоустройство</span>
+		<ul>
+			<li><a href="#">Центры ААЭП</a></li>
+			<li><a href="#">АИСТ</a></li>
+			<li><a href="#">Рынок труда</a></li>
+			<li><a href="#">Вакансии</a></li>
+			<li><a href="#">Консультации</a></li>
+			<li><a href="#">КЦСТ</a></li>
+		</ul>
+
+		<span class="h3_fmenu" style="margin-top:30px;">Внутренние ресурсы</span>
+		<ul>
+			<li><a href="#">СМК</a></li>
+			<li><a href="#">Методическое обеспечение</a></li>
+		</ul>
+		</div>
+		<div class="rst">
+			<img src="images/rst.png" height="46" width="60">
+		</div>
+	</div>
+
+	<div class="footer_bottom_block">
+		<div class="copyright">
+		<p>(c) ААЭП, 2015 Все права защищены законом РФ.</p>
+		<div class="right_align_block">
+		<span class="do_not_copy">Копирование содержания любой части сайта запрещено!</span>
+	</div>
+	</div>
+	</div>
+    </div>
+
+
+
+</div>
 </footer><!-- .footer -->
 
 </body>
