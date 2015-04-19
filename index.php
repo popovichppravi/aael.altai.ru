@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-	<title></title>
+	<title>Алтайская академия экономики и права</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 	 <link href="http://allfont.ru/css/?fonts=roboto-light" rel="stylesheet" type="text/css" />
@@ -12,14 +12,53 @@
 	<!--Main Slider-->
 	<link rel="stylesheet" type="text/css" href="slider/basic.css"/>
 <link rel="stylesheet" type="text/css" href="slider/theme.css"/>
+<link rel="stylesheet" type="text/css" href="css/animations.css">
 <link rel="stylesheet" type="text/css" href="carousel/assets/owl.carousel.css">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script type="text/javascript" src="slider/js/JwgSlider.min.js"></script>
+<script type="text/javascript" src="slider/js/jwgSlider.min.js"></script>
 <script type="text/javascript" src="carousel/owl.carousel.min.js"></script>
 <script type="text/javascript" src="carousel/owl.carousel.js"></script>
 </head>
 
 <body>
+<div id="top_menu_big">
+	<div class="contr">
+	<div class="menu_btn_tt"><a href="#">меню</a></div>
+	<div class="logo_tt">
+		<img alt="" class="logo_w" src="images/logo_w.png">
+	</div>
+
+
+	<div id="menu_top_top">
+<div>
+<ul>
+	<li><a href="#"><img alt="" src="images/mt1.png" height="25" width="29"><br>Главная</a></li>
+	<li><a href="#"><img alt="" src="images/mt2.png" height="25" ><br>ААЭП</a></li>
+	<li><a href="#"><img alt="" src="images/mt3.png" height="25" ><br>Абитуриенту</a></li>
+	<li><a href="#"><img alt="" src="images/mt4.png" height="25" ><br>Студенту</a></li>
+	<li><a href="#"><img alt="" src="images/mt5.png" height="25" ><br>Партнеру</a></li>
+	<li><a href="#"><img alt="" src="images/mt6.png" height="25"><br>Выпускнику</a></li>
+	<li><a href="#"><img alt="" src="images/mt7.png" height="25" ><br>Форум</a></li>
+	<li><a href="#"><img alt="" src="images/mt8.png" height="25" ><br>СМИ</a></li>
+</ul>
+</div>
+</div>
+	</div>
+	<div class="tow_line_top"></div>
+</div>
+<div id="left_menu_big">
+	<div class="left_menu">
+		<ul>
+		<li><a href="#">Важные сслыки не длинее двух</a></li>
+		<li><a href="#">трех слов в одной фарзе, что бы</a></li>
+		<li><a href="#">не было двойной строчки у ссылки</a></li>
+		<li><a href="#">Желательно этот момент учесть!</a></li>
+		</ul>
+	</div>
+
+</div>
+<div id="black_hole"></div>
+
 
 <div class="top_rectangle"></div>	
 
@@ -31,15 +70,14 @@
 		<div class="login_form">
 					<span class="h2_lg">Авторизуйтесь</span>
 					<div class="w_line"></div>
-					<form class="login" action="" method="">
+					<form class="login" action="#" method="post">
 		<input type="text" name="login" placeholder="E-mail">
 		<input type="text" name="pass" placeholder="Пароль">
 		<div class="rem_reg">
 		<a href="#">Регистрация</a><br>
 		<a href="#">Забыли пароль?</a>        
 		</div>
-		<input type="submit" value="Войти" class="btn_lblue">
-		
+		<input type="submit" value="Войти" class="btn_lblue">	
 	</form>
 				</div>
 </div>
@@ -59,7 +97,7 @@
 	<!-- // LOGO -->
 	<div id="logo">  
           <a href="#" title="">
-          <img src="images/logo.png" alt="">        
+          <img alt="" src="images/logo.png">        
         </a>
     </div>
 	<!-- LOGO // -->
@@ -98,18 +136,42 @@
 <div id="bottom_header">
 	<div class="menu_btn"><a href="#">меню</a></div>
 
+	<script type="text/javascript">
+$(".menu_btn").click(function () {
+      $("#left_menu_big").addClass("slideRight");
+      $("#top_menu_big").addClass("slideDown");
+      $hh=$(document).height();
+      $("#left_menu_big").height($hh);
+      $("#black_hole").addClass("fadeIn");
+
+    });
+
+$(window).resize(function () {
+ $hh=$(document).height();
+      $("#left_menu_big").height($hh);
+});
+
+$("#black_hole").click(function () {
+
+	 $("#left_menu_big").removeClass("slideRight");
+      $("#top_menu_big").removeClass("slideDown");
+       $("#black_hole").removeClass("fadeIn");
+});
+
+	</script>
+
 <!-- // Top Menu -->
 <div id="menu_top">
 <div>
 <ul>
-	<li><a href="#"><img src="images/m1.png" height="25" width="29"><br>Главная</a></li>
-	<li><a href="#"><img src="images/m2.png" height="25" ><br>ААЭП</a></li>
-	<li><a href="#"><img src="images/m3.png" height="25" ><br>Абитуриенту</a></li>
-	<li><a href="#"><img src="images/m4.png" height="25" ><br>Студенту</a></li>
-	<li><a href="#"><img src="images/m5.png" height="25" ><br>Партнеру</a></li>
-	<li><a href="#"><img src="images/m6.png" height="25"><br>Выпускнику</a></li>
-	<li><a href="#"><img src="images/m7.png" height="25" ><br>Форум</a></li>
-	<li><a href="#"><img src="images/m8.png" height="25" ><br>СМИ</a></li>
+	<li><a href="#"><img alt="" src="images/m1.png" height="25" width="29"><br>Главная</a></li>
+	<li><a href="#"><img alt="" src="images/m2.png" height="25" ><br>ААЭП</a></li>
+	<li><a href="#"><img alt="" src="images/m3.png" height="25" ><br>Абитуриенту</a></li>
+	<li><a href="#"><img alt="" src="images/m4.png" height="25" ><br>Студенту</a></li>
+	<li><a href="#"><img alt="" src="images/m5.png" height="25" ><br>Партнеру</a></li>
+	<li><a href="#"><img alt="" src="images/m6.png" height="25"><br>Выпускнику</a></li>
+	<li><a href="#"><img alt="" src="images/m7.png" height="25" ><br>Форум</a></li>
+	<li><a href="#"><img alt="" src="images/m8.png" height="25" ><br>СМИ</a></li>
 </ul>
 </div>
 </div>
@@ -127,15 +189,15 @@
     <div class="arrow_navigation">
       <div class="left">
 
-        <p> <img src="slider/img/arr1.png" height="27" width="15"></p>
+        <p> <img alt="" src="slider/img/arr1.png" height="27" width="15"></p>
       </div>
       <div class="right">
-        <p> <img src="slider/img/arr2.png" height="27" width="15"></p>
+        <p> <img alt="" src="slider/img/arr2.png" height="27" width="15"></p>
       </div>
     </div>
     <div class="slides">
       <div class="slide">
-      <img src="images/slide.png" width="520" height="290" class="big_img">
+      <img alt="" src="images/slide.png" width="520" height="290" class="big_img">
         <div class="block_right">
         	<span class="medium">Открытые двери для Всех желающих каждую субботу в 17.00 в актовом зале</span>
 
@@ -147,7 +209,7 @@
       </div>
      
       <div class="slide">
-      <img src="images/slide.png" width="520" height="290" class="big_img">
+      <img alt="" src="images/slide.png" width="520" height="290" class="big_img">
         <div class="block_right">
         	<span class="medium">Открытые двери для Всех желающих каждую субботу в 17.00 в актовом зале</span>
 
@@ -159,7 +221,7 @@
       </div>
 
        <div class="slide">
-      <img src="images/slide.png" width="520" height="290" class="big_img">
+      <img alt="" src="images/slide.png" width="520" height="290" class="big_img">
         <div class="block_right">
         	<span class="medium">Открытые двери для Всех желающих каждую субботу в 17.00 в актовом зале</span>
 
@@ -287,10 +349,10 @@
 
 <div class="bottom_photo_block">
 <div class="owl-carousel">
-    <div class="item"><img src="images/foto1.png" height="210" width="210"></div>
-    <div class="item"><img src="images/foto2.png" height="210" width="210"></div>
-    <div class="item"><img src="images/foto3.png" height="210" width="210"></div>
-    <div class="item"><img src="images/foto4.png" height="210" width="210"></div>
+    <div class="item"><img alt="" src="images/foto1.png" height="210" width="210"></div>
+    <div class="item"><img alt="" src="images/foto2.png" height="210" width="210"></div>
+    <div class="item"><img alt="" src="images/foto3.png" height="210" width="210"></div>
+    <div class="item"><img alt="" src="images/foto4.png" height="210" width="210"></div>
 </div>
 <script>	
 	$('.owl-carousel').owlCarousel({
@@ -313,6 +375,7 @@
 </div>
 
 <div class="shape"></div>
+</div>
 <!-- Main Photo//-->
 
 
@@ -327,12 +390,12 @@
 <div class="bottom_about_block">
 <div id="middle_menu">
 <ul>
-	<li><a href="#"><img src="images/mm1.png"><br><b>Ректор</b></a></li>
-	<li><a href="#"><img src="images/mm2.png"><br>Юридический факультет</a></li>
-	<li><a href="#"><img src="images/mm3.png"><br>Факультет ЭУВД</a></li>
-	<li><a href="#"><img src="images/mm4.png"><br>Заочное отделение</a></li>
-	<li><a href="#"><img src="images/mm5.png"><br>Центры дополнительного образования</a></li>
-	<li><a href="#"><img src="images/mm6.png"><br>Научные<br>и экспертные центры</a></li>
+	<li><a href="#"><img alt="" src="images/mm1.png"><br><b>Ректор</b></a></li>
+	<li><a href="#"><img alt="" src="images/mm2.png"><br>Юридический факультет</a></li>
+	<li><a href="#"><img alt="" src="images/mm3.png"><br>Факультет ЭУВД</a></li>
+	<li><a href="#"><img alt="" src="images/mm4.png"><br>Заочное отделение</a></li>
+	<li><a href="#"><img alt="" src="images/mm5.png"><br>Центры дополнительного образования</a></li>
+	<li><a href="#"><img alt="" src="images/mm6.png"><br>Научные<br>и экспертные центры</a></li>
 </ul>
 	
 </div>
@@ -360,7 +423,7 @@
 	<div class="opros">
 	<span class="h1_main_block opros_h">Об академии</span>
 	<p class="qws">Вам нравится этот сайт?</p>
-<input type="radio" checked="checked" name="dva"/><label for="dva">Да, дизайн хороший, актуальная информация и в полном объеме</label><br> 
+<input type="radio" checked="checked" id="dva" name="dva"/><label for="dva">Да, дизайн хороший, актуальная информация и в полном объеме</label><br> 
 <input type="radio" name="dva" id="dva1" /><label for="dva1">Средне, дизайн не самый 
 удачный, актуальная информация и в полном объеме</label><br>
 <input type="radio" name="dva" id="dva2"/><label for="dva2">Средне, дизайн хороший, 
@@ -372,16 +435,16 @@
 <div class="banners">
 	<div id="owl-demo" class="owl-carousel">
     <div>
-        <img src="images/sb1.png"/>
-        <img src="images/sb2.png"/>
+        <img alt="" src="images/sb1.png"/>
+        <img alt="" src="images/sb2.png"/>
     </div>
     <div>
-        <img src="images/sb3.png"/ style="padding: 5px; width: 200px; height: 100px;">
-        <img src="images/sb4.png"/>
+        <img alt="" src="images/sb3.png" style="padding: 5px; width: 200px; height: 100px;"/>
+        <img alt="" src="images/sb4.png"/>
     </div>
     <div>
-        <img src="images/sb1.png"/>
-        <img src="images/sb2.png"/>
+        <img alt="" src="images/sb1.png"/>
+        <img alt="" src="images/sb2.png"/>
     </div>
 </div>
 </div>
@@ -400,11 +463,11 @@
 
 <div class="links">
 	<ul>
-		<li><a href="#"><img src="images/l0.png"></a></li>
-		<li><a href="#"><img src="images/l1.png"></a></li>
-		<li><a href="#"><img src="images/l2.png"></a></li>
-		<li><a href="#"><img src="images/l3.png"></a></li>
-		<li><a href="#"><img src="images/l4.png"></a></li>
+		<li><a href="#"><img alt="" src="images/l0.png"></a></li>
+		<li><a href="#"><img alt="" src="images/l1.png"></a></li>
+		<li><a href="#"><img alt="" src="images/l2.png"></a></li>
+		<li><a href="#"><img alt="" src="images/l3.png"></a></li>
+		<li><a href="#"><img alt="" src="images/l4.png"></a></li>
 	</ul>
 </div>
 </div>
@@ -419,7 +482,7 @@
 	<div class="footer_block">
 	<div class="footer_top_block">
 		<div class="layout-column first_column">
-			<img class="logo_w" src="images/logo_w.png">
+			<img alt="" class="logo_w" src="images/logo_w.png">
 			<p>
 				Официальный сайт «Алтайской Академии экономики и права»
 			</p>
@@ -482,7 +545,7 @@
 		</ul>
 		</div>
 		<div class="rst">
-			<img src="images/rst.png" height="46" width="60">
+			<img alt="" src="images/rst.png" height="46" width="60">
 		</div>
 	</div>
 
